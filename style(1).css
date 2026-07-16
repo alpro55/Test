@@ -1,0 +1,70 @@
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "JetBrainsMono Nerd Font", "Inter", sans-serif;
+    font-size: 14px;
+    min-height: 0;
+}
+
+window#waybar {
+    background-color: transparent;
+}
+
+/* Every module gets its own floating pill */
+#clock,
+#workspaces,
+#pulseaudio,
+#battery,
+#network {
+    background-color: rgba(30, 30, 40, 0.75);
+    color: #e0e0e0;
+    border-radius: 16px;
+    padding: 4px 14px;
+    margin: 4px 0;
+}
+
+#clock {
+    font-weight: 600;
+}
+
+/* Workspaces: numbered circles inside the pill */
+#workspaces {
+    padding: 4px 8px;
+}
+
+#workspaces button {
+    all: initial;
+    color: #b0b0b0;
+    background-color: transparent;
+    border-radius: 50%;
+    min-width: 22px;
+    min-height: 22px;
+    margin: 0 3px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+#workspaces button.active {
+    background-color: rgba(255, 255, 255, 0.15);
+    color: #ffffff;
+}
+
+#workspaces button.urgent {
+    background-color: #eb4d4b;
+    color: #ffffff;
+}
+
+/* Right-side pills */
+#pulseaudio,
+#battery,
+#network {
+    font-weight: 500;
+}
+
+#battery.warning {
+    color: #f2c14e;
+}
+
+#battery.critical {
+    color: #eb4d4b;
+}
